@@ -4,9 +4,6 @@
   function searchWikipedia (term) {
     return $.ajax({
     url : `https://api.github.com/search/users?q=${term}`,
-    headers: {
-      'Authorization': 'Basic bHVjYXNzY2FyaW90OmZlNzdlODFkMmI4NzgxNzhlZDg5NDA4YWU2ZjNkMWM4MjM2M2Q5MjI=',
-    },
     }).promise();
   }
 
